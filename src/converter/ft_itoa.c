@@ -12,8 +12,6 @@
 
 #include "libft_converter.h"
 
-static size_t		ft_intlen(int n);
-
 char	*ft_itoa(int n)
 {
 	unsigned int	un;

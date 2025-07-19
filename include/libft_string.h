@@ -2,6 +2,7 @@
 # define LIBFT_STRING_H
 
 # include "stddef.h"
+# include "stdlib.h"
 # include "libft_math.h"
 
 char	**ft_split(char const *s, char c);

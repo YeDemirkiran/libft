@@ -2,6 +2,7 @@
 # define LIBFT_LINKED_LIST_H
 
 # include "stddef.h"
+# include "stdlib.h"
 
 typedef struct s_list
 {

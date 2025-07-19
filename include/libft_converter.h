@@ -2,6 +2,7 @@
 # define LIBFT_CONVERTER_H
 
 # include "stddef.h"
+# include "stdlib.h"
 # include "libft_math.h"
 # include "libft_predicate.h"
 
