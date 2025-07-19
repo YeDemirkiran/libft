@@ -2,6 +2,7 @@
 # define LIBFT_WRITE_H
 
 # include "unistd.h"
+# include "libft_string.h"
 
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);

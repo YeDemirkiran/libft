@@ -6,6 +6,7 @@
 		"libft_string.h": "c",
 		"stddef.h": "c",
 		"libft.h": "c",
-		"libft_char.h": "c"
+		"libft_char.h": "c",
+		"unistd.h": "c"
 	}
 }
