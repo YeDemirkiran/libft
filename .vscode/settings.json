@@ -1,0 +1,11 @@
+{
+	"files.associations": {
+		"libft_math.h": "c",
+		"libft_predicate.h": "c",
+		"libft_linked_list.h": "c",
+		"libft_string.h": "c",
+		"stddef.h": "c",
+		"libft.h": "c",
+		"libft_char.h": "c"
+	}
+}

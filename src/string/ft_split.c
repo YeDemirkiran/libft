@@ -10,9 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_string.h"
 
-static size_t	word_count(const char *s, char c);
 static void		*clear_alloc(char **s, size_t j);
 
 char	**ft_split(char const *s, char c)
@@ -21,7 +20,7 @@ char	**ft_split(char const *s, char c)
 	size_t	len;
 	size_t	j;
 
-	str_arr = malloc((word_count(s, c) + 1) * sizeof(char *));
+	str_arr = malloc((ft_word_count(s, c) + 1) * sizeof(char *));
 	if (!str_arr)
 		return (NULL);
 	j = 0;
@@ -42,23 +41,6 @@ char	**ft_split(char const *s, char c)
 	}
 	str_arr[j] = NULL;
 	return (str_arr);
-}
-
-static size_t	word_count(const char *s, char c)
-{
-	size_t	count;
-	size_t	i;
-
-	count = 0;
-	i = 0;
-	while (s[i])
-	{
-		if (i && ((s[i] == c && s[i - 1] != c)
-				|| (s[i] != c && !s[i + 1])))
-			count++;
-		i++;
-	}
-	return (count);
 }
 
 static void	*clear_alloc(char **s, size_t len)

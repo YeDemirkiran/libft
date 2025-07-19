@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_predicate.h"
 
 int	ft_isalnum(int c)
 {

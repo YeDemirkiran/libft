@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-static size_t	ft_smaller(size_t x, size_t y);
+#include "libft_string.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -24,7 +22,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		str_rmng = 0;
 	else
 		str_rmng = ft_strlen(s + start);
-	size = ft_smaller(str_rmng, len) + 1;
+	size = ft_st_smaller(str_rmng, len) + 1;
 	substr = malloc(size * sizeof(*substr));
 	if (!substr)
 		return (NULL);
@@ -33,11 +31,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	else
 		ft_strlcpy(substr, s + start, size);
 	return (substr);
-}
-
-static size_t	ft_smaller(size_t x, size_t y)
-{
-	if (x < y)
-		return (x);
-	return (y);
 }
