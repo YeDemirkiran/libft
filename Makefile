@@ -57,9 +57,9 @@ all: $(NAME)
 # 	mv -t $(OBJ_DIR) $(LIBFT_WRITE_OBJ)
 
 $(NAME): $(ALL_OBJ)
-	ar rcs $(NAME) ${ALL_OBJS}
-	mkdir -p $(OBJ_DIR)
-	mv -t $(OBJ_DIR) $(ALL_OBJ)
+	ar rcs $(NAME) ${ALL_OBJ}
+#	mkdir -p $(OBJ_DIR)
+#	mv -t $(OBJ_DIR) $(ALL_OBJ)
 
 clean:
 	rm -rf $(OBJ_DIR)
