@@ -14,18 +14,11 @@ Consists of char modification functions.
 - [ft_tolower()](./src/char/ft_tolower.c): Converts an uppercase character to lowercase and returns the converted char.
 - [ft_tolower()](./src/char/ft_toupper.c): Converts a lowercase character to uppercase and returns the converted char.
 
-### Dependencies
-None.
-
 ## 2 - Converter
 Consists of conversion functions that converts one data type to another.
 
 - [ft_atoi()](./src/converter/ft_atoi.c): Converts an ASCII array to integer.
 - [ft_itoa()](./src/converter/ft_itoa.c): Converts an integer to an ASCII string.
-
-### Dependencies
-- [Predicate](./src/predicate/)
-- [Math](./src/math/)
 
 ## 3 - Linked List
 Consists of a linked list datatype, and its related functions.
@@ -40,20 +33,15 @@ Consists of a linked list datatype, and its related functions.
 - [ft_lstiter()](./src/linked_list/ft_lstiter.c): Iterates through a linked list and executes the 'f' function on all nodes.
 - [ft_lstmap()](./src/linked_list/ft_lstmap.c): Duplicated a linked list and applies function 'f' on all the new nodes.
 
-### Dependencies
-None.
-
 ## 4 - Math
 Consists of simple math functions.
 
 - [ft_abs()](./src/math/ft_abs.c): Returns the absolute value of an integer.
 - [ft_intlen()](./src/math/ft_intlen.c): Returns the number of digits in an integer.
 
-### Dependencies
-None.
-
 # 5 - Memory
 Consists of memory manipulation functions.
+
 
 # Authors
 Yaşam Ensar Demirkıran ([yademirk][yademirk-url])
