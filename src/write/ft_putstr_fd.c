@@ -6,11 +6,12 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:49:51 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:55:04 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 20:42:50 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_write.h"
+#include <unistd.h>
+#include "libft/string.h"
 
 // Writes a string in a file.
 void	ft_putstr_fd(char *s, int fd)

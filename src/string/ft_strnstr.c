@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 13:09:18 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:50:44 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 20:35:14 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_string.h"
+#include <stddef.h>
 
 // Finds the first occurence of string 'little' in string 'big' if it exists
 // within 'len' bytes.

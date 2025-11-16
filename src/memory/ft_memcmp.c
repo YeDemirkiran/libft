@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 13:08:48 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:33:57 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:21:07 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_memory.h"
+#include <stddef.h>
 
 // Compares two memory blocks and returns their difference.
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

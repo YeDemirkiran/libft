@@ -6,11 +6,12 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:48:44 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:18:52 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:17:58 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_converter.h"
+#include <stdlib.h>
+#include "libft/math.h"
 
 // Converts an integer to an ASCII string.
 char	*ft_itoa(int n)

@@ -6,11 +6,12 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:49:22 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:22:31 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:19:13 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_linked_list.h"
+#include <stddef.h>
+#include "libft/linked_list.h"
 
 // Returns the size of a linked list.
 int	ft_lstsize(t_list *lst)

@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 11:59:15 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:34:17 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:21:29 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_memory.h"
+#include <stddef.h>
 
 // Copies the first n bytes from src to dest.
 void	*ft_memcpy(void *dest, const void *src, size_t n)

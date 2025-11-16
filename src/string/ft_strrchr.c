@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 13:09:21 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:51:26 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 20:35:25 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_string.h"
+#include <stddef.h>
 
 // Returns the last instance of char c in a string, NULL if doesn't exist.
 char	*ft_strrchr(const char *s, int c)

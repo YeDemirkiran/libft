@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 13:09:14 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:50:07 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 20:34:52 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_string.h"
+#include <stddef.h>
 
 // Compares two strings until the n-th byte and returns their difference.
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

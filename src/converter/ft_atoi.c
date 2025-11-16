@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 13:04:18 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:57:08 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:16:29 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_converter.h"
+#include "libft/predicate.h"
 
 // Converts an ASCII array to integer.
 int	ft_atoi(const char *nptr)

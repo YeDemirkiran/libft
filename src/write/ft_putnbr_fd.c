@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:49:48 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:54:55 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 20:42:29 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_write.h"
+#include "libft/write.h"
 
 // Writes an integer in a file.
 void	ft_putnbr_fd(int n, int fd)

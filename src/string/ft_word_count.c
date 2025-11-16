@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 18:53:28 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:53:40 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 20:37:03 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_string.h"
+#include <stddef.h>
 
 // Returns the word count in a string separated by char c.
 size_t	ft_word_count(const char *s, char c)

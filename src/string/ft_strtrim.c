@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:50:18 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:52:47 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 20:35:34 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_string.h"
+#include "libft/string.h"
 
 // Trims each character from 'set' from the start and end of a string.
 char	*ft_strtrim(char const *s1, char const *set)

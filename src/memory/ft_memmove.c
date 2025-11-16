@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 12:07:51 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:34:43 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:21:38 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_memory.h"
+#include "libft/memory.h"
 
 // Same as ft_memcpy but overlap safe.
 void	*ft_memmove(void *dest, const void *src, size_t n)

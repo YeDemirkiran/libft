@@ -6,11 +6,12 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 12:17:24 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:32:15 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 19:20:41 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_memory.h"
+#include <stdlib.h>
+#include "libft/memory.h"
 
 // Same as glibc calloc.
 void	*ft_calloc(size_t nmemb, size_t size)

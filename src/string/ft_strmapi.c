@@ -6,11 +6,12 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:50:13 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:49:43 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 20:34:26 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include "libft_string.h"
+#include <stdio.h>
+#include "libft/string.h"
 
 // Iteratively applies function 'f' to each character of a string and returns
 // the copy.
