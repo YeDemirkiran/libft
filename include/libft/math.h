@@ -1,25 +1,22 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   math.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/27 12:23:46 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 19:09:26 by yademirk         ###   ########.fr       */
+/*   Created: 2025/11/16 19:07:45 by yademirk          #+#    #+#             */
+/*   Updated: 2025/11/16 19:07:46 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef MATH_H
+# define MATH_H
 
-# include <libft/char.h>
-# include <libft/converter.h>
-# include <libft/linked_list.h>
-# include <libft/math.h>
-# include <libft/memory.h>
-# include <libft/predicate.h>
-# include <libft/string.h>
-# include <libft/write.h>
+# include <stddef.h>
+
+unsigned int	ft_abs(int n);
+size_t			ft_intlen(int n);
+size_t			ft_st_smaller(size_t x, size_t y);
 
 #endif

@@ -1,25 +1,23 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   predicate.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/27 12:23:46 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 19:09:26 by yademirk         ###   ########.fr       */
+/*   Created: 2025/11/16 19:08:01 by yademirk          #+#    #+#             */
+/*   Updated: 2025/11/16 19:08:01 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef PREDICATE_H
+# define PREDICATE_H
 
-# include <libft/char.h>
-# include <libft/converter.h>
-# include <libft/linked_list.h>
-# include <libft/math.h>
-# include <libft/memory.h>
-# include <libft/predicate.h>
-# include <libft/string.h>
-# include <libft/write.h>
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
+int	ft_isprint(int c);
+int	ft_is_white_space(int c);
 
 #endif
