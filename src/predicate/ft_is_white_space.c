@@ -1,24 +1,17 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_is_white_space.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/12 17:50:03 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 18:43:10 by yademirk         ###   ########.fr       */
+/*   Created: 2025/11/16 18:40:17 by yademirk          #+#    #+#             */
+/*   Updated: 2025/11/16 18:41:07 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-// Iterates through a string and applies function 'f' on each character.
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+// Checks if a character is whitespace (between 9 and 13, or a space).
+int	ft_is_white_space(int c)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (s[i])
-	{
-		(*f)(i, s + i);
-		i++;
-	}
+	return ((c >= 9 && c <= 13) || c == 32);
 }

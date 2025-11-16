@@ -1,5 +1,6 @@
 #include "libft_math.h"
 
+// Returns the number of digits in an integer.
 size_t	ft_intlen(int n)
 {
 	unsigned int	un;

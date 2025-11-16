@@ -1,17 +1,18 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yademirk <yademirk@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:50:25 by yademirk          #+#    #+#             */
-/*   Updated: 2025/06/12 18:08:53 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 18:53:22 by yademirk         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #include "libft_string.h"
 
+// Returns a duplicate of a string within 'start' and 'start + len' range.
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;

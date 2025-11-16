@@ -1,19 +1,29 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yademirk <yademirk@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:49:56 by yademirk          #+#    #+#             */
-/*   Updated: 2025/06/12 17:49:56 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 18:42:01 by yademirk         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #include "libft_string.h"
 
-static void		*clear_alloc(char **s, size_t j);
+static void	*clear_alloc(char **s, size_t len)
+{
+	size_t	i;
 
+	i = 0;
+	while (i < len)
+		free(s[i++]);
+	free(s);
+	return (NULL);
+}
+
+// Splits a string by delimiter char c and returns an array of strings.
 char	**ft_split(char const *s, char c)
 {
 	char	**str_arr;
@@ -41,15 +51,4 @@ char	**ft_split(char const *s, char c)
 	}
 	str_arr[j] = NULL;
 	return (str_arr);
-}
-
-static void	*clear_alloc(char **s, size_t len)
-{
-	size_t	i;
-
-	i = 0;
-	while (i < len)
-		free(s[i++]);
-	free(s);
-	return (NULL);
 }
