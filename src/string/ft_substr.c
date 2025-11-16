@@ -6,10 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:50:25 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 20:36:45 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 21:12:05 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
+#include <stdlib.h>
 #include "libft/string.h"
 
 // Returns a duplicate of a string within 'start' and 'start + len' range.
@@ -23,7 +24,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		str_rmng = 0;
 	else
 		str_rmng = ft_strlen(s + start);
-	size = ft_st_smaller(str_rmng, len) + 1;
+	if (str_rmng < len)
+		size = str_rmng + 1;
+	else
+		size = len + 1;
 	substr = malloc(size * sizeof(*substr));
 	if (!substr)
 		return (NULL);

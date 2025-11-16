@@ -6,11 +6,11 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 17:49:16 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 19:19:10 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 21:10:05 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-#include <stddef.h>
+#include <stdlib.h>
 #include "libft/linked_list.h"
 
 // Creates and retuns a new linked list node.

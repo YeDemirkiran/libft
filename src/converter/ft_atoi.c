@@ -6,7 +6,7 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 13:04:18 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 19:16:29 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 21:05:28 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -20,7 +20,7 @@ int	ft_atoi(const char *nptr)
 
 	num = 0;
 	sign = 1;
-	while (ft_is_white_space(*nptr))
+	while (ft_is_whitespace(*nptr))
 		nptr++;
 	if (*nptr == '-' || *nptr == '+')
 	{

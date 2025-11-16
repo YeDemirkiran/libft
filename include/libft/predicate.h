@@ -6,7 +6,7 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 19:08:01 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 19:08:01 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/11/16 21:05:28 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -18,6 +18,6 @@ int	ft_isdigit(int c);
 int	ft_isalnum(int c);
 int	ft_isascii(int c);
 int	ft_isprint(int c);
-int	ft_is_white_space(int c);
+int	ft_is_whitespace(int c);
 
 #endif
