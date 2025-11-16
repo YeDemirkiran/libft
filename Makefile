@@ -6,7 +6,7 @@
 #    By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/16 21:19:07 by yademirk          #+#    #+#              #
-#    Updated: 2025/11/16 21:35:45 by yademirk         ###   ########.fr        #
+#    Updated: 2025/11/16 21:56:07 by yademirk         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -36,7 +36,7 @@ LL = $(addprefix $(LL_DIR), $(LL_SRC))
 
 ## Math
 MATH_DIR = $(SRC_DIR)math/
-MATH_SRC = ft_abs.c ft_intlen.c ft_st_smaller.c
+MATH_SRC = ft_abs.c ft_intlen.c
 MATH = $(addprefix $(MATH_DIR), $(MATH_SRC))
 
 ## Memory
