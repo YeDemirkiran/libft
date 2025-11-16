@@ -6,7 +6,7 @@
 #    By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/16 21:19:07 by yademirk          #+#    #+#              #
-#    Updated: 2025/11/16 21:30:49 by yademirk         ###   ########.fr        #
+#    Updated: 2025/11/16 21:35:45 by yademirk         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -71,20 +71,24 @@ FLAGS = -Wall -Wextra -Werror
 # ---------------------------------------------------------------
 
 all: $(NAME)
+	@echo "Done."
 
 $(NAME): $(ALL_OBJ)
-	ar rcs $@ $?
+	@echo "Linking object files..."
+	@ar rcs $@ $?
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
+	@echo "Compiling $(notdir $?)"
 	@mkdir -p $(dir $@)
-	@echo "Compiling C file '$?'"
 	@$(CC) $(FLAGS) -c $? -o $@ -I$(INC_DIR)
 
 clean:
-	rm -rf $(OBJ_DIR)
+	@echo "Removing the obj/ folder..."
+	@rm -rf $(OBJ_DIR)
 
 fclean: clean
-	rm -f $(NAME)
+	@echo "Removing the '$(NAME)' file..."
+	@rm -f $(NAME)
 
 re: fclean all
 
