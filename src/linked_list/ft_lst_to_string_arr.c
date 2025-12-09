@@ -1,16 +1,16 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_lst_to_string_arr.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
+/*   By: yademirk <yademirk@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 22:40:02 by yademirk          #+#    #+#             */
-/*   Updated: 2025/12/08 22:40:40 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/12/09 17:57:02 by yademirk         ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
-#include <stddef.h>
+#include <stdlib.h>
 #include "libft/linked_list.h"
 
 /**
@@ -19,7 +19,7 @@
  * @note Strings are not duplicated, their address are shared.
  * @warning Don't use it on non-string content.
  */
-char	**ft_list_to_string_arr(t_list *list)
+char	**ft_lst_to_string_arr(t_list *list)
 {
 	size_t	length;
 	size_t	i;
