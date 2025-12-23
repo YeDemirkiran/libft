@@ -6,7 +6,7 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 18:53:28 by yademirk          #+#    #+#             */
-/*   Updated: 2025/11/16 20:37:03 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/12/23 14:34:29 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -18,14 +18,20 @@ size_t	ft_word_count(const char *s, char c)
 	size_t	count;
 	size_t	i;
 
+	if (s == NULL)
+		return (0);
 	count = 0;
 	i = 0;
 	while (s[i])
 	{
-		if (i && ((s[i] == c && s[i - 1] != c)
-				|| (s[i] != c && !s[i + 1])))
+		while (s[i] && s[i] == c)
+			i++;
+		if (s[i])
+		{
 			count++;
-		i++;
+			while (s[i] && s[i] != c)
+				i++;
+		}
 	}
 	return (count);
 }
