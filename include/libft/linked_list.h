@@ -6,12 +6,14 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 19:07:30 by yademirk          #+#    #+#             */
-/*   Updated: 2025/12/25 22:43:25 by yademirk         ###   ########.fr       */
+/*   Updated: 2025/12/25 22:58:24 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 #ifndef LINKED_LIST_H
 # define LINKED_LIST_H
+
+# include <stddef.h>
 
 typedef struct s_list
 {
@@ -25,7 +27,6 @@ int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
-void	ft_lstdel_index(t_list **lst, size_t index, void (*del)(void *));
 void	ft_lstdel_node(t_list **lst, t_list *target, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));

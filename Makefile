@@ -1,14 +1,14 @@
-# **************************************************************************** #
+#******************************************************************************#
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yademirk <yademirk@student.42istanbul.com. +#+  +:+       +#+         #
+#    By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/16 21:19:07 by yademirk          #+#    #+#              #
-#    Updated: 2025/12/09 17:57:16 by yademirk         ###   ########.fr        #
+#    Updated: 2025/12/25 22:56:10 by yademirk         ###   ########.fr        #
 #                                                                              #
-# **************************************************************************** #
+#******************************************************************************#
 
 NAME = libft.a
 
@@ -31,7 +31,7 @@ CONVERTER = $(addprefix $(CONVERTER_DIR), $(CONVERTER_SRC))
 
 ## Linked List
 LL_DIR = $(SRC_DIR)linked_list/
-LL_SRC = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c ft_lst_to_string_arr.c
+LL_SRC = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_lstdel_node.c ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c ft_lst_to_string_arr.c
 LL = $(addprefix $(LL_DIR), $(LL_SRC))
 
 ## Math
