@@ -1,24 +1,33 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel_node.c                                   :+:      :+:    :+:   */
+/*   ft_lst_replace.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/25 22:31:23 by yademirk          #+#    #+#             */
-/*   Updated: 2025/12/26 18:30:33 by yademirk         ###   ########.fr       */
+/*   Created: 2025/12/26 18:24:14 by yademirk          #+#    #+#             */
+/*   Updated: 2025/12/26 18:37:27 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 #include "libft/linked_list.h"
 
-// Deletes a node of a linked list using the del function.
-void	ft_lstdel_node(t_list **lst, t_list *target, void (*del)(void *))
+/**
+ * @brief Takes a list, and replaces the target node with a new node/list.
+ * @note If target and new is the same, or target is not in the list,
+ * nothing happens.
+ * @note The target parameter can be a single node or a whole list: It is
+ * safely connected to the replaces node's next item.
+ */
+void	ft_lst_replace(t_list **lst, t_list *target,
+	t_list *new, void (*del)(void *))
 {
 	t_list	*pre;
 	t_list	*node;
 
-	if (lst == NULL || *lst == NULL || target == NULL)
+	if (lst == NULL || *lst == NULL || target == NULL || new == NULL)
+		return ;
+	if (target == new)
 		return ;
 	pre = NULL;
 	node = *lst;
@@ -27,9 +36,10 @@ void	ft_lstdel_node(t_list **lst, t_list *target, void (*del)(void *))
 		if (node == target)
 		{
 			if (pre != NULL)
-				pre->next = node->next;
+				pre->next = new;
 			else
-				*lst = node->next;
+				*lst = new;
+			ft_lstlast(new)->next = node->next;
 			ft_lstdelone(node, del);
 			return ;
 		}
