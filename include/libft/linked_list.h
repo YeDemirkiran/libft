@@ -6,7 +6,7 @@
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 19:07:30 by yademirk          #+#    #+#             */
-/*   Updated: 2025/12/26 18:37:38 by yademirk         ###   ########.fr       */
+/*   Updated: 2026/02/01 17:02:16 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -34,5 +34,15 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 char	**ft_lst_to_string_arr(t_list *list);
+
+/**
+ * @brief Takes a list with char * content, and adds the new node
+ * to its correct place.
+ *
+ * @note
+ * This function assumes the given list is already sorted in ascending order.
+ * Do NOT use this if the list is not already sorted.
+ */
+void	ft_lstadd_sorted(t_list **lst, t_list *new);
 
 #endif
