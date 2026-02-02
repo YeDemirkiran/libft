@@ -1,16 +1,28 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lst_add_to_sorted_place.c                       :+:      :+:    :+:   */
+/*   ft_lstadd_sorted.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yademirk <yademirk@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 16:58:15 by yademirk          #+#    #+#             */
-/*   Updated: 2026/02/01 17:02:06 by yademirk         ###   ########.fr       */
+/*   Updated: 2026/02/02 11:07:18 by yademirk         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 #include "libft/linked_list.h"
+
+static int	initial_check(t_list **lst, t_list *new)
+{
+	if (lst == NULL || new == NULL || new->content == NULL)
+		return (0);
+	if (*lst == NULL)
+	{
+		*lst = new;
+		return (0);
+	}
+	return (1);
+}
 
 // Needed only here, unoptimized and messy but whatever
 static int	ft_strcmp(const char *s1, const char *s2)
@@ -29,6 +41,18 @@ static int	ft_strcmp(const char *s1, const char *s2)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
+static void	add_current_to_list(t_list **lst, t_list *current,
+	t_list *pre, t_list *new)
+{
+	if (pre == NULL)
+		ft_lstadd_front(lst, new);
+	else
+	{
+		pre->next = new;
+		new->next = current;
+	}
+}
+
 /**
  * @brief Takes a list with char * content, and adds the new node
  * to its correct place.
@@ -44,13 +68,8 @@ void	ft_lstadd_sorted(t_list **lst, t_list *new)
 	char	*str_current;
 	char	*str_new;
 
-	if (lst == NULL || new == NULL || new->content == NULL)
+	if (initial_check(lst, new) == 0)
 		return ;
-	if (*lst == NULL)
-	{
-		*lst = new;
-		return ;
-	}
 	str_new = (char *)(new->content);
 	current = *lst;
 	pre = NULL;
@@ -59,13 +78,7 @@ void	ft_lstadd_sorted(t_list **lst, t_list *new)
 		str_current = (char *)(current->content);
 		if (ft_strcmp(str_current, str_new) >= 0)
 		{
-			if (pre == NULL)
-				ft_lstadd_front(lst, new);
-			else
-			{
-				pre->next = new;
-				new->next = current;
-			}
+			add_current_to_list(lst, current, pre, new);
 			return ;
 		}
 		pre = current;
